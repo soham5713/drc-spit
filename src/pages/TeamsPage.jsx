@@ -131,11 +131,6 @@ const TeamsPage = () => {
                         className="bg-black/50 backdrop-blur-lg rounded-xl p-6 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 group"
                       >
                         <div className="text-center">
-                          <img
-                            src={member.avatar || "/placeholder.svg"}
-                            alt={member.name}
-                            className="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-gray-600 group-hover:border-gray-500 transition-colors"
-                          />
                           <h4 className="text-lg font-semibold text-white mb-1">{member.name}</h4>
                           <p className="text-gray-400 text-sm mb-3">{member.role}</p>
                           <div className="flex justify-center space-x-2">
