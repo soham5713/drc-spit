@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import HomePage from "./pages/HomePage"
 import TeamsPage from "./pages/TeamsPage"
 import EventsPage from "./pages/EventsPage"
+import JoinUsPage from "./pages/JoinUsPage"
 import DroneLoader from "./components/DroneLoader"
 
 const App = () => {
@@ -63,6 +64,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/join" element={<JoinUsPage />} />
         </Routes>
       </div>
     </BrowserRouter>

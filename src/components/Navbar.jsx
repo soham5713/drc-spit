@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { Menu, X, Cpu, Zap } from "lucide-react"
+import { Menu, X, Cpu, Zap } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -62,6 +62,16 @@ const Navbar = () => {
             >
               Events
             </Link>
+            <Link
+              to="/join"
+              className={`px-6 py-2 rounded-xl font-medium transition-all duration-300 ${
+                isActive("/join")
+                  ? "bg-gradient-to-r from-gray-700 to-gray-600 text-white shadow-lg border border-gray-500"
+                  : "text-gray-400 hover:text-white hover:bg-gray-800/50 border border-transparent hover:border-gray-700"
+              }`}
+            >
+              Join Us
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -109,6 +119,17 @@ const Navbar = () => {
                 }`}
               >
                 Events
+              </Link>
+              <Link
+                to="/join"
+                onClick={() => setIsOpen(false)}
+                className={`px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
+                  isActive("/join")
+                    ? "bg-gradient-to-r from-gray-700 to-gray-600 text-white"
+                    : "text-gray-400 hover:text-white hover:bg-gray-800/50"
+                }`}
+              >
+                Join Us
               </Link>
             </div>
           </div>
