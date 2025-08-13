@@ -369,7 +369,7 @@ const JoinUsPage = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-white text-black hover:bg-gray-200 font-semibold py-3 text-lg transition-all duration-300"
+                    className="w-full bg-white text-black cursor-pointer hover:bg-gray-200 font-semibold py-3 text-lg transition-all duration-300"
                   >
                     {isSubmitting ? (
                       <>

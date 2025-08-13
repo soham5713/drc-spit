@@ -180,9 +180,16 @@ const HomePage = () => {
         {/* Central Welcome Message */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-center">
           <div className="bg-black/30 backdrop-blur-md shadow-2xl rounded-2xl px-8 py-4 border border-gray-700/50 hover:border-gray-600/50 hover:bg-black/40 transition-all duration-300 group cursor-pointer">
-            <p className="text-gray-100 text-lg">
-              <span className="text-white font-semibold">DRC</span> • Drone & Robotics Club
-            </p>
+            <div className="flex items-center justify-center space-x-3 mb-1">
+              <img 
+                src="/DRC logo without bg.png" 
+                alt="DRC Logo" 
+                className="w-8 h-8 object-contain"
+              />
+              <p className="text-gray-100 text-lg">
+                <span className="text-white font-semibold">DRC</span> • Drone & Robotics Club
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -218,8 +225,8 @@ const HomePage = () => {
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentEventIndex * 20}%)` }}
               >
-                {events.map((event, index) => (
-                  <div key={event.id} className="w-1/3 flex-shrink-0 px-3">
+                {events.map((event) => (
+                   <div key={event.id} className="w-1/3 flex-shrink-0 px-3">
                     <Card className="bg-gray-900/30 border-gray-700/50 hover:border-gray-600/50 hover:bg-gray-900/40 backdrop-blur-md transition-all duration-300 group py-0">
                       <CardContent className="p-0">
                         <div className="aspect-video bg-gray-800/50 rounded-t-lg overflow-hidden">

@@ -17,8 +17,12 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-br from-gray-700 via-gray-600 to-gray-800 rounded-lg flex items-center justify-center border border-gray-600 shadow-lg">
-                <Cpu className="w-6 h-6 text-white group-hover:text-blue-400 transition-colors" />
+              <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 group-hover:bg-white/15 group-hover:border-white/30 transition-all duration-300 shadow-lg overflow-hidden">
+                <img 
+                  src="/DRC logo without bg.png" 
+                  alt="DRC Logo" 
+                  className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
+                />
               </div>
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
                 <Zap className="w-2 h-2 text-white" />
